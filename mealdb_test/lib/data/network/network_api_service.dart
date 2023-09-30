@@ -36,16 +36,10 @@ class NetworkApiServices extends BaseApiServices {
     try {
       Response response = await dio.get(url);
       responseJson = returnResponse(response);
-      // print(response);
+
 
     } catch (e) {}
-    // on SocketException {
-    //   throw InternetException('');
-    // }on RequestTimeOut {
-    //   throw RequestTimeOut('');
-    //
-    // }
-    // print(responseJson);
+
     return responseJson;
   }
 
@@ -67,9 +61,8 @@ class NetworkApiServices extends BaseApiServices {
 
 
     }
- }
 
-    return responseJson;
+ return responseJson;
   }
 
   dynamic returnResponse(Response response) {
